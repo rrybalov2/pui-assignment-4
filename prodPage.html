@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bun Bun Bake Shop</title>
+      <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="main.js"></script>
+
+  </head>
+
+  <body>
+
+      <!--This is the header, containing an image and the menu links-->
+      <header>
+          <a href="index.html"><img src="./Assets/bunbunlogosmall.png" alt="Bun Bun Logo" width="200"></a>
+          <h2>Check out all of our delicious pastries!  We ship worldwide!</p></h2>
+
+          <nav>
+              <a href="index.html">HOME</a> -
+              <a href="allProdPage.html">SEE OUR BUNS</a> -
+              <a href="about.html">BEHIND THE CHEF</a> -
+              <!--Cart icon with counter-->
+              <a href="cart.html">SEE YOUR CART &nbsp;<img src="./Assets/cart.png" width="20" href="cart.html"></a>
+              <a id="numForCart">0</a>
+          </nav>
+      </header>
+
+      <!--This is the main content of the page-->
+      <div>
+      </p></p>
+  </div>
+
+  <!--This is creating the structure of the container-->
+  <div class="row">
+      <!--Empty column on the left-->
+      <div class="column side"></div>
+      <!--Middle column that contains the actual content-->
+      <div class="column middle">
+          <!--Product image in it's own gallery-->
+          <div class="gallery">
+              <img id="mainBun" src="./Assets/originalbun.jpg" alt="Original Bun" width="600">
+              <div class="desc">
+                  <p></p>
+              </div>
+          </div>
+
+          <!--Flexbox container holding all of the text-->
+          <div class="flex-container">
+            <div class="flex-item"><h3>This is our original, and best-selling, Baked Bun! </h3>
+                <p> </p> <h4>They are soft and fluffy and made with the perfect levels of umami. You'll want to bring these to every dinner party, cuz there's no stopping FLAVORTOWN!!</h4>
+
+            <p>Buy them one at a time, and by the half and full dozen. Up to two more flavors available for the 6 and 12 packs.</p>
+
+            <!--Description that changes per different options-->
+            <p id="showDesc">Get them one at a time!</p>
+
+            <!--Price that changes per different options-->
+            <p id="showP">$1 per single bun</p>
+
+        </br>
+
+        <!--Drop down menu to choose bun pack type-->
+        <p>Choose the package type:</p>
+        <select id="bun-pack-type">
+            <option value="Single">Single Bun</option>
+            <option value="Six Pack">Six Pack of Original Buns</option>
+            <option value="Dozen Pack">Dozen Original Buns</option>
+            <option value="Six Pack Mixed Flavors">Six Pack of Mixed Buns</option>
+            <option value="Dozen Pack Mixed Flavors">Dozen of Mixed Buns</option>
+        </select>
+
+        <!--Drop down menu to choose bun pack quantity-->
+        <select id="amount-select">
+          <option disabled selected>How many?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+      </select>
+
+      <!--Drop down menu to choose first flavor of buns-->
+      <div id="first-flavor" style="display:none">
+          <p>Choose a first flavor</p>
+          <select id="dropdown1">
+              <option value="Original Flavor">Original</option>
+              <option value="maple-one">Maple</option>
+              <option value="bacon-one">Bacon</option>
+          </select>
+      </div>
+
+      <!--Drop down menu to choose second flavor of buns-->
+      <div id="second-flavor" style="display:none">
+          <p>Choose a second flavor</p>
+          <select id="dropdown2">
+              <option value="Original Flavor">Original</option>
+              <option value="maple-two">Cinnamon</option>
+              <option value="bacon-two">Orange</option>
+          </select>
+      </div>
+
+      <p></p>
+
+      <button id="add">Add to Cart</button>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div>
+      <p></p>
+  </div>
+  <!--Footer with social media links-->
+  <div class="footer">
+    <div class="column side"></div>
+    <div class="column middle">
+    Follow us! &nbsp; &nbsp;
+      <a target="_blank" href="https://www.facebook.com"><img src="./Assets/facebookicon.png" width="20"></a> &nbsp;  &nbsp;
+      <a target="_blank" href="https://www.twitter.com"><img src="./Assets/twittericon.png" width="20"></a> &nbsp;  &nbsp;
+      <a target="_blank" href="https://www.instagram.com"><img src="./Assets/instagramicon.png" width="20"></a>
+    </div>
+  </div>
+
+  </body>
+
+</html>
