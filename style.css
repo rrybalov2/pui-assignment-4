@@ -7,7 +7,7 @@
             }
 
 body {
-    margin: 0;
+    margin: 0px 0px 400px 0px;
     background-color: #e8efee;
 }
 
@@ -50,7 +50,7 @@ header a {
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 body {
-    margin: 0;
+    margin: 0px 0px 400px 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -137,4 +137,3 @@ tr:nth-child(even) {
     background: #ff7a7a;
     color: white;
 }
-
